@@ -1,0 +1,64 @@
+{% extends "index.html" %} {% load static %} {% block content %}
+
+
+<div class="container text-center my-2 d-sm-block d-lg-none">
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <a href="./index.html" class="btn btn-outline-primary">Home</a>
+        <a href="./all-quiz.html" class="btn btn-outline-primary">Quiz</a>
+        <a href="./leaderboard.html" class="btn btn-outline-primary">LeaderBoard</a>
+        <a href="./login.html" class="btn btn-outline-primary">Login</a>
+    </div>
+</div>
+
+
+<div class="container text-center my-5">
+    <h1 class="display-5 fw-bold my-2">Welcome to Testgenius</h1>
+    <p class="fs-3">Not just make your ranking in college but also in knowledge</p>
+    <div class="d-inline-flex gap-2 mb-5">
+        <a href="./all-quiz.html" class="d-inline-flex align-items-center btn btn-primary btn-lg px-4"> 
+          Take a Quiz
+        </a>
+        <a href="./register.html" class="btn btn-outline-secondary btn-lg px-4 ">
+          Sign Up
+        </a>
+    </div>
+</div>
+
+<div class="container text-center">
+    <h1 class="display-4 my-5 ">LeaderBoard</h1>
+
+    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 mx-3">
+        <div class="col-lg-4 position-relative mb-4">
+            <img src="{%static 'images/user.png'%}" alt="user-profile" class="img-fluid" width="150" height="150">
+            <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">1</span>
+            <h2 class="fw-normal">@Pubudu</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel.</p>
+            <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div>
+
+        <div class="col-lg-4 position-relative mb-4">
+            <img src="{%static 'images/user.png'%}" alt="user-profile" class="img-fluid" width="150" height="150">
+            <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">2</span>
+            <h2 class="fw-normal">@Pubudu</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel.</p>
+            <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div>
+
+        <div class="col-lg-4 position-relative mb-4">
+            <img src="{%static 'images/user.png'%}" alt="user-profile" class="img-fluid" width="150" height="150">
+            <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">3</span>
+            <h2 class="fw-normal">@Pubudu</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel.</p>
+            <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div>
+        <div class="col-lg-4 position-relative mb-4">
+            <img src="{%static 'images/user.png'%}" alt="user-profile" class="img-fluid" width="150" height="150">
+            <span class="position-absolute top-0 start-90 translate-middle badge rounded-pill bg-success">4</span>
+            <h2 class="fw-normal">@Pubudu</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel.</p>
+            <p><a class="btn btn-secondary" href="./profile.html">View Profile »</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
